@@ -1,3 +1,4 @@
+<?php  
 <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
     <div class="container">
         <a class="navbar-brand" href="">NEMA TREE TRACKER</a>
@@ -11,7 +12,7 @@
                         <a class="nav-link" href="">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href=" ">District</a>
+                        <a class="nav-link" href="districts.php">District</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="register.php">Register</a>
@@ -19,7 +20,11 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="list_of_users.php">Members</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="tree_types.php">Trees</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+    ?>

@@ -66,7 +66,7 @@
         				<hr>
 
 
-        				<button type="submit" class="btn btn-success">Register</button>
+        				<button type="submit" class="btn btn-danger">Register</button>
 
         			</div>
         		</div>

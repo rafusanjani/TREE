@@ -41,16 +41,15 @@ switch ($level) {
 
 		break;
 
-	case 2:		// text = 0*1  OR  0*2 
+	case 2:		
 
-		 if($inputArray[1]   ==  1) {//he wants to register// 
+		 if($inputArray[1]   ==  1) {
 
 		 	echo "CON What is is your name?";
 
 
 
-		 }elseif ($inputArray[1] == 2) {//he wants to add a tree
-
+		 }elseif ($inputArray[1] == 2) {
 		 	$checkmembers = $sqliCon->query("SELECT * FROM members WHERE phone_number = '$phone_number' ");
 
 		 	if($checkmembers->num_rows == 0) 
@@ -103,7 +102,7 @@ switch ($level) {
 		 	}
 
 
-		 }elseif ($inputArray[1] == 2) {//he wants to add a tree// // 0*2*7837
+		 }elseif ($inputArray[1] == 2) {
 
 		 	$number_of_trees = $inputArray[2];
 
@@ -144,3 +143,4 @@ switch ($level) {
 
 		break;
 }
+?>
