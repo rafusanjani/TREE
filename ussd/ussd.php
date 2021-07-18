@@ -5,13 +5,7 @@ require('../AfricasTalkingGateway.php');
 
 require('sql_connection.php');
 
-$phone_number = $_POST['phoneNumber'];
 
-$textFromUser = $_POST['text'];
-
-$sessionID = $_POST['sessionId'];
-
-$serviceCode = $_POST['serviceCode'];
 
 if(empty($textFromUser)){
 
@@ -20,6 +14,15 @@ if(empty($textFromUser)){
 }else{
 
 	$textFromUser = "0*".$textFromUser;
+
+	$phone_number = $_POST['phoneNumber'];
+
+$textFromUser = $_POST['text'];
+
+$sessionID = $_POST['sessionId'];
+
+$serviceCode = $_POST['serviceCode'];
+
 
 }
 
@@ -31,7 +34,7 @@ switch ($level) {
 
 	case 1:
 
-		$response = "CON Welcome to the Climate (U) Limited";
+		$response = "CON Welcome to the Tree Database";
 
 	    $response .= "\n 1. Register";
 
